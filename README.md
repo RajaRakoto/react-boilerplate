@@ -5,7 +5,7 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg " width="80">
     </td>
     <td>
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="200"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="100"/>
     </td>
   </tr>
 </table>
@@ -78,6 +78,5 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 You can also check out my other starter projects:
 
 - 🚀 [bun-boilerplate](https://github.com/RajaRakoto/bun-boilerplate)
-- 🚀 [deno-boilerplate](https://github.com/RajaRakoto/deno-boilerplate)
 - 🚀 [node-boilerplate](https://github.com/RajaRakoto/node-boilerplate)
 - 🚀 [next-boilerplate](https://github.com/RajaRakoto/next-boilerplate)
