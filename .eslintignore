@@ -95,10 +95,10 @@ typings
 .eslintrc
 .prettierignore
 .prettierrc
+.dockerignore
 LICENSE
 README.md
 bun.lockb
-build.js
 gruntfile.cjs
 package.json
 tsconfig.json
