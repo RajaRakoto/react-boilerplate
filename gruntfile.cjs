@@ -157,6 +157,6 @@ module.exports = function (grunt) {
     }
 
    // task resume
-    getTaskResume('== REACT BOILERPLATE TASKS ==', myTasksNames, myTasksStatus, 'yellow');
+    getTaskResume('== REACT BOILERPLATE TASKS ==', myTasksNames, myTasksStatus, 'blue');
   });
 };
