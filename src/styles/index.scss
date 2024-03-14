@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+$text-color: rgba(255, 255, 255, 0.87);
+$dark-background: #242424;
+$light-text-color: #213547;
+$light-background: #ffffff;
+$link-color: #646cff;
+$link-hover-color: #535bf2;
+$link-light-hover-color: #747bff;
+$button-background-dark: #1a1a1a;
+$button-background-light: #f9f9f9;
+$button-border-color: #646cff;
+
+:root {
+	font-family: $font-family;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: $text-color;
+	background-color: $dark-background;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@media (prefers-color-scheme: light) {
+		color: $light-text-color;
+		background-color: $light-background;
+	}
+}
+
+a {
+	font-weight: 500;
+	color: $link-color;
+	text-decoration: inherit;
+
+	&:hover {
+		color: $link-hover-color;
+
+		@media (prefers-color-scheme: light) {
+			color: $link-light-hover-color;
+		}
+	}
+}
+
+body {
+	margin: 0;
+	display: flex;
+	place-items: center;
+	min-width: 320px;
+	min-height: 100vh;
+}
+
+h1 {
+	font-size: 3.2em;
+	line-height: 1.1;
+}
+
+button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: $button-background-dark;
+	cursor: pointer;
+	transition: border-color 0.25s;
+
+	&:hover {
+		border-color: $button-border-color;
+	}
+
+	&:focus,
+	&:focus-visible {
+		outline: 4px auto -webkit-focus-ring-color;
+	}
+
+	@media (prefers-color-scheme: light) {
+		background-color: $button-background-light;
+	}
+}
