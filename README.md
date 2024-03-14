@@ -85,11 +85,15 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 - 📜 `versioning` - Start ungit server.
 
-**npm Commands**
+**NPM Commands**
 
 - 📜 `npm-version:major` - Increments the major version number of your project using npm.
 - 📜 `npm-version:minor` - Increments the minor version number of your project using npm.
 - 📜 `npm-version:patch` - Increments the version patch number of your project using npm.
+
+**Scripts**
+
+- 📜 `script:sass-charset` - Adds the @charset "UTF-8" declaration at the beginning of all SCSS files in the project.
 
 ---
 
