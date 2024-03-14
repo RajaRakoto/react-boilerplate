@@ -73,6 +73,7 @@
     "npm-check-updates": "^16.14.12",
     "prettier": "^3.2.4",
     "rimraf": "^5.0.5",
+    "sass": "^1.72.0",
     "ts-jest": "^29.1.2",
     "typescript": "^5.2.2",
     "ungit": "^1.5.25",
