@@ -1,1 +1,1 @@
-export type FunctionComponent = React.ReactElement | null;
+export type T_FunctionComponent = React.ReactElement | null;
