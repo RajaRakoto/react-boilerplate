@@ -103,6 +103,8 @@ gruntfile.cjs
 package.json
 tsconfig.json
 tsconfig.release.json
+playwright.config.ts
+vite.config.ts
 jest.config.json
 backups
 tmp
