@@ -89,20 +89,20 @@ typings
 .tern-port
 
 # own
-backups
-tmp
 .github
+.gitignore
 .eslintignore
 .eslintrc
-.gitignore
 .prettierignore
 .prettierrc
-bun.lockb
-esbuild.js
-gruntfile.cjs
-jest.config.js
 LICENSE
-package.json
 README.md
+bun.lockb
+build.js
+gruntfile.cjs
+package.json
 tsconfig.json
 tsconfig.release.json
+jest.config.json
+backups
+tmp
