@@ -107,5 +107,7 @@ playwright.config.ts
 vite.config.ts
 jest.config.json
 scripts/*.js
+postcss.config.js
+tailwind.config.js
 backups
 tmp
