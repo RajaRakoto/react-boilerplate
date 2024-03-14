@@ -10,5 +10,3 @@ src
         └── example
             ├── Example.tsx
             └── Example.scss
-
-
