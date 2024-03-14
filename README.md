@@ -24,6 +24,7 @@ Instant Value - All basic tools included and configured:
 - ⚡ Use Vite for lightning fast HMR (hot reload)
 - ⚡ Optimized build by Vite
 - 🧪 Test E2E with Playwright
+- 🐳 Containerization for easy deployment and scaling with Docker
 - 🩷 Sass extends CSS with features like variables, nested rules, mixins, imports, inheritance, built-in functions, and more ...
 
 > You can customize your website faster with [PLUM](https://github.com/RajaRakoto/plum), a mixins toolset powered by SASS. Quickly produce consistent, scalable CSS output, regardless of project size.
