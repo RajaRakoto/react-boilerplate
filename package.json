@@ -35,7 +35,7 @@
     "preview": "vite preview",
     "clean": "rimraf build dist coverage",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "bun run clean && tsc && vite build",
     "test": "bun test",
     "test:watch": "bun test --watch",
     "eslint": "eslint . --ext js,cjs,mjs,ts,mts,jsx,tsx --report-unused-disable-directives --max-warnings 0",
