@@ -17,6 +17,11 @@
     "plugin:react-hooks/recommended",
     "prettier"
   ],
+  "overrides": [
+    {
+      "files": ["*.{js,cjs,mjs,ts,mts,jsx,tsx}"]
+    }
+  ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "warn",
     "react-refresh/only-export-components": [
