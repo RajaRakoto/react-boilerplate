@@ -23,7 +23,7 @@ Instant Value - All basic tools included and configured:
 - 🖥️ Ungit for version control (git) with a GUI
 - ⚡ Use Vite for lightning fast HMR (hot reload)
 - ⚡ Optimized build by Vite
-- 🧪 Test E2E with Playwright
+- 🧪 E2E Test with Playwright
 - 🐳 Containerization for easy deployment and scaling with Docker
 - 🩷 Sass extends CSS with features like variables, nested rules, mixins, imports, inheritance, built-in functions, and more ...
 
