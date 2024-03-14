@@ -6,6 +6,7 @@ import App from "./components/app/App.tsx";
 
 /* styles */
 import "./styles/index.scss";
+// import "./styles/tailwind.scss";
 
 // =======================================
 
