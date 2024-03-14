@@ -106,5 +106,6 @@ tsconfig.release.json
 playwright.config.ts
 vite.config.ts
 jest.config.json
+scripts/*.js
 backups
 tmp
