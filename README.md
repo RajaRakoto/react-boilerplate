@@ -18,12 +18,12 @@ Instant Value - All basic tools included and configured:
 - 🎨 Prettier to enforce consistent code style
 - ⚙️ EditorConfig for consistent coding style
 - 📦 NPM scripts for common operations
-- 📝 Simple example of Tsx code and unit test
+- 📝 Simple example of Tsx code
 - 🐗 Run tasks with Grunt (example for backup)
 - 🖥️ Ungit for version control (git) with a GUI
 - ⚡ Use Vite for lightning fast HMR (hot reload)
 - ⚡ Optimized build by Vite
-- 🧪 E2E Test with Playwright
+- 🧪 E2E test with Playwright
 - 🐳 Containerization for easy deployment and scaling with Docker
 - 🩷 Sass extends CSS with features like variables, nested rules, mixins, imports, inheritance, built-in functions, and more ...
 
@@ -45,7 +45,7 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 ---
 
-### 📌 Scripts 
+### 📌 NPM Scripts 
 
 **Preview**
 
@@ -53,7 +53,7 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 **Clean**
 
-- 📜 `clean` - Remove coverage data, prod, build.
+- 📜 `clean` - Remove coverage data, prod folder, playwright-report ...
 
 **Development**
 
@@ -65,8 +65,10 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 **Testing**
 
-- 📜 `test` - Run bun test.
-- 📜 `test:watch` - Interactive watch mode to automatically re-run tests with bun.
+- 📜 `test:unit` - Run unit testing with Bun.js.
+- 📜 `test:unit:watch` - Interactive watch mode to automatically re-run unit testing with Bun.js.
+- 📜 `test:e2e` - Run end to end (e2e) testing with Playwright.
+
 
 **Linting and Formatting**
 
