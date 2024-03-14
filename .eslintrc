@@ -7,7 +7,7 @@
   "parserOptions": {
     "project": "tsconfig.json",
     "sourceType": "module",
-    "ecmaVersion": 2020
+    "ecmaVersion": "latest"
   },
   "plugins": ["@typescript-eslint", "jest", "react-refresh"],
   "extends": [
