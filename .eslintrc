@@ -1,15 +1,24 @@
 {
-  "root": true,
-  "env": { "browser": true, "es2020": true },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "plugins": ["@typescript-eslint", "jest", "react-refresh"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:jest/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
   ],
-  "ignorePatterns": ["dist", ".eslintrc.cjs"],
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["react-refresh"],
   "rules": {
+    "@typescript-eslint/explicit-function-return-type": "warn",
     "react-refresh/only-export-components": [
       "warn",
       { "allowConstantExport": true }
