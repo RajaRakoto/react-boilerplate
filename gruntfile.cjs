@@ -1,7 +1,6 @@
 /**
- * @author: Raja
- * @description: gruntfile for tasks runner
- * @requires: grunt load-grunt-tasks grunt-contrib-compress
+ * @description: gruntfile for react boilerplate
+ * @requires: grunt | load-grunt-tasks | grunt-contrib-compress
  */
 module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
@@ -28,14 +27,14 @@ module.exports = function (grunt) {
         files: [{ src: ['./*', './.*'] }],
         filter: 'isFile',
       },
-      tests: {
+      public: {
         options: {
-          archive: backupsDestination + 'tests.tar.gz',
+          archive: backupsDestination + 'public.tar.gz',
         },
         expand: true,
-        cwd: './tests/',
+        cwd: './public/',
         src: includeAllFiles,
-        dest: 'tests',
+        dest: 'public',
       },
       src: {
         options: {
@@ -45,6 +44,15 @@ module.exports = function (grunt) {
         cwd: './src/',
         src: includeAllFiles,
         dest: 'src',
+      },
+      tests: {
+        options: {
+          archive: backupsDestination + 'tests.tar.gz',
+        },
+        expand: true,
+        cwd: './tests/',
+        src: includeAllFiles,
+        dest: 'tests',
       },
       tmp: {
         options: {
@@ -61,8 +69,9 @@ module.exports = function (grunt) {
   // all grunt register tasks
   grunt.registerTask('backup', [
     'compress:main',
-    'compress:tests',
+    'compress:public',
     'compress:src',
+    'compress:tests',
     'compress:tmp'
   ]);
 
@@ -70,7 +79,7 @@ module.exports = function (grunt) {
   const myTasksNames = ['backup'];
 
   // tasks status (description)
-  const myTasksStatus = ['compress: main | tests | src | tmp'];
+  const myTasksStatus = ['compress: main | public | src | tests | tmp'];
 
   // default tasks
   grunt.registerTask('default', () => {
@@ -117,7 +126,7 @@ module.exports = function (grunt) {
       }
     }
 
-    // task resume
-    getTaskResume('~ TASKS ~', myTasksNames, myTasksStatus, 'yellow');
+   // task resume
+    getTaskResume('== REACT BOILERPLATE TASKS ==', myTasksNames, myTasksStatus, 'yellow');
   });
 };
