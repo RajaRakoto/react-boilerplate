@@ -30,7 +30,7 @@ pids
 *.seed
 *.pid.lock
 
-# coverage 
+# coverage
 coverage
 lib-cov
 *.lcov
@@ -88,6 +88,7 @@ typings
 # ternjs
 .tern-port
 
-# own 
+# own
+playwright-report
 backups
 tmp
