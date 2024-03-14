@@ -38,7 +38,7 @@
     "build": "bun run clean && tsc && vite build",
     "test:unit": "bun test ./tests/*.test.ts",
     "test:unit:watch": "bun test --watch ./tests/*.test.ts",
-    "test:e2e": "rimraf playwright-report && playwright test",
+    "test:e2e": "rimraf playwright-report && playwright test ./e2e/*.spec.ts",
     "eslint": "eslint --config .eslintrc --report-unused-disable-directives --max-warnings 0 .",
     "prettier": "prettier --config .prettierrc --write .",
     "backup": "grunt backup",
