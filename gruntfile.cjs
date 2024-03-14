@@ -36,6 +36,15 @@ module.exports = function (grunt) {
         src: includeAllFiles,
         dest: 'github',
       },
+      e2e: {
+        options: {
+          archive: backupsDestination + 'e2e.tar.gz',
+        },
+        expand: true,
+        cwd: './e2e/',
+        src: includeAllFiles,
+        dest: 'e2e',
+      },
       public: {
         options: {
           archive: backupsDestination + 'public.tar.gz',
@@ -79,6 +88,7 @@ module.exports = function (grunt) {
   grunt.registerTask('backup', [
     'compress:main',
     'compress:github',
+    'compress:e2e',
     'compress:public',
     'compress:src',
     'compress:tests',
@@ -89,7 +99,7 @@ module.exports = function (grunt) {
   const myTasksNames = ['backup'];
 
   // tasks status (description)
-  const myTasksStatus = ['compress: main | github | public | src | tests | tmp'];
+  const myTasksStatus = ['compress: main | github | e2e | public | src | tests | tmp'];
 
   // default tasks
   grunt.registerTask('default', () => {
