@@ -11,10 +11,10 @@ import {
 	increment__redux,
 	decrement__redux,
 	reset__redux,
-} from "../../store/redux/reducer/global";
+} from "../../stores/redux/reducer/global";
 
 /* store - zustand */
-import useZustandStore from "../../store/zustand/store";
+import useZustandStore from "../../stores/zustand/store";
 
 /* styles */
 import "./App.scss";

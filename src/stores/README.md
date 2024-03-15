@@ -1,6 +1,6 @@
-# src/store
+# src/stores
 
-The store directory should contain files relating to global data stores (redux, zystand, ...). You can view the outcome in the browser console to experiment with "redux" or "zustand"
+The stores directory should contain files relating to global data stores (redux, zystand, ...). You can view the outcome in the browser console to experiment with "redux" or "zustand"
 
 > You can remove all the files related to the state manager you are not using, as well as the dependencies:
 
