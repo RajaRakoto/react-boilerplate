@@ -49,6 +49,12 @@ $bun-logo-hover-filter: #fbd461aa;
 }
 
 .card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
 	padding: $padding;
 }
 

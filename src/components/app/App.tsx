@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 /* assets */
 import reactLogo from "../../assets/icons/react.svg";
 import bunLogo from "../../assets/icons/bun.svg";
 import viteLogo from "/vite.svg";
+
+/* store */
+import { useStoreDispatch, useStoreSelector } from "../../hooks/redux";
+import { get__user } from "../../store/redux/reducer/user";
 
 /* styles */
 import "./App.scss";
@@ -14,7 +18,18 @@ import { T_FunctionComponent } from "../../types";
 // =======================================
 
 export default function App(): T_FunctionComponent {
+	const REDUX_STORE = useStoreSelector((state) => state.user);
+	const REDUX = useStoreDispatch();
+
 	const [count, setCount] = useState(0);
+
+	useEffect(() => {
+		console.log(REDUX_STORE);
+	}, [REDUX_STORE]);
+
+	const handleRedux = (id: string): void => {
+		REDUX(get__user(id));
+	};
 
 	return (
 		<>
@@ -34,12 +49,17 @@ export default function App(): T_FunctionComponent {
 				<button onClick={() => setCount((count) => count + 1)}>
 					count is {count}
 				</button>
-				<p>
-					Edit <code>src/components/app/App.tsx</code> and save to test HMR
-				</p>
+				<button onClick={() => handleRedux("admin")}>redux</button>
 			</div>
+			<p>
+				Edit "<code>src/components/app/App.tsx</code>" and save to test HMR
+			</p>
+			<p>
+				You can view the outcome in the browser console to experiment with{" "}
+				<strong>redux</strong> or <strong>zustand</strong>
+			</p>
 			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
+				Click on the Vite, React and Bun logos to learn more
 			</p>
 		</>
 	);
