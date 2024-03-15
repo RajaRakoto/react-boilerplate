@@ -8,8 +8,10 @@ The stores directory should contain files relating to global data stores (redux,
 
 **Files**
 ```
+src/components/app/App.tsx
 src/hooks/redux.ts
 src/store/redux/*
+src/main.tsx
 ```
 
 **Dependencies**
@@ -21,6 +23,7 @@ bun remove @reduxjs/toolkit react-redux
 
 **Files**
 ```
+src/components/app/App.tsx
 src/store/zustand/*
 ```
 
