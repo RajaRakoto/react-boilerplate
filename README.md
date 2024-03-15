@@ -25,6 +25,8 @@ Instant Value - All basic tools included and configured:
 - ⚡ Optimized build by Vite
 - 🧪 E2E test with Playwright
 - 🐳 Containerization for easy deployment and scaling with Docker
+- 🧺 Pre-configured setup for Redux or Zustand as state manager, easily removable if not needed
+- 🌀 Tailwind CSS already set up with PostCSS for flexible usage
 - 🩷 Sass extends CSS with features like variables, nested rules, mixins, imports, inheritance, built-in functions, and more ...
 
 > You can customize your website faster with [PLUM](https://github.com/RajaRakoto/plum), a mixins toolset powered by SASS. Quickly produce consistent, scalable CSS output, regardless of project size.
@@ -41,7 +43,9 @@ cd <project-name>
 bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 ```
 
-> NOTE: For certain configurations in the package.json file, you need to modify them to tailor them to your project (e.g: name, description, author, keywords, main, repository, ...).
+> NOTE 1: In order to help you better understand the structure of this boilerplate, there is a `README.md` file in each subdirectory of src.
+
+> NOTE 2: For certain configurations in the `package.json` file, you need to modify them to tailor them to your project (e.g: name, description, author, keywords, main, repository, ...).
 
 ---
 
