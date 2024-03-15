@@ -49,6 +49,26 @@ bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 
 ---
 
+### 📌 Deployment
+
+Instructions are provided for deploying both with and without Docker. Both options still require a platform to host the application.
+
+**Without Docker**: Deploying is as easy as running the following command and pointing your web server to the generated `index.html` file found at `dist/index.html`
+
+```bash
+bun run build
+```
+
+**With Docker**: A Dockerfile with an [NGINX](https://www.nginx.com/) base image is also provided for quick and easy deployments. Simply execute the following commands:
+
+```bash
+bun run build
+docker build . -t <container_name> # eg: docker build . -t todo-app
+docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 8080:80 
+```
+
+---
+
 ### 📌 NPM Scripts 
 
 **Preview**
