@@ -5,7 +5,7 @@ import viteLogo from "/vite.svg";
 import reactLogo from "../../assets/icons/react.svg";
 import bunLogo from "../../assets/icons/bun.svg";
 
-/* store */
+/* store - redux */
 import { useStoreDispatch, useStoreSelector } from "../../hooks/redux";
 import { get__user } from "../../store/redux/reducer/user";
 

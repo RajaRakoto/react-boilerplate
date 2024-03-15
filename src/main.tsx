@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 /* components */
 import App from "./components/app/App.tsx";
 
-/* store */
+/* store - redux */
 import store from "./store/redux/store.ts";
 
 /* styles */
