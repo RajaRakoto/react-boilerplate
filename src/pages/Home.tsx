@@ -1,5 +1,5 @@
 /* types */
-import { T_FunctionComponent } from "../types";
+import { T_FunctionComponent } from "../@types";
 
 // =======================================
 

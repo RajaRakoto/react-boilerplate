@@ -20,7 +20,7 @@ import useZustandStore from "../../store/zustand/store";
 import "./App.scss";
 
 /* types */
-import { T_FunctionComponent } from "../../types";
+import { T_FunctionComponent } from "../../@types";
 
 // =======================================
 
