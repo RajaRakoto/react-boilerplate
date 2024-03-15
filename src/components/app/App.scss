@@ -48,14 +48,25 @@ $bun-logo-hover-filter: #fbd461aa;
 	}
 }
 
-.card {
+.cards {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	gap: 0.5rem;
+	gap: 1rem;
 	padding: $padding;
+
+	.card {
+		padding: 10px;
+		border-radius: 7px;
+		background-color: #cccccc3a;
+
+		button {
+			margin: 10px;
+			background-color: #ffffff;
+		}
+	}
 }
 
 .read-the-docs {

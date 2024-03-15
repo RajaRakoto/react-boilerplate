@@ -7,7 +7,14 @@ import bunLogo from "../../assets/icons/bun.svg";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "../../hooks/redux";
-import { get__user } from "../../store/redux/reducer/user";
+import {
+	increment__redux,
+	decrement__redux,
+	reset__redux,
+} from "../../store/redux/reducer/global";
+
+/* store - zustand */
+import useZustandStore from "../../store/zustand/store";
 
 /* styles */
 import "./App.scss";
@@ -18,17 +25,44 @@ import { T_FunctionComponent } from "../../types";
 // =======================================
 
 export default function App(): T_FunctionComponent {
-	const REDUX_STORE = useStoreSelector((state) => state.user);
-	const REDUX = useStoreDispatch();
-
+	// basic state
 	const [count, setCount] = useState(0);
 
+	// redux
+	const REDUX_STORE = useStoreSelector((state) => state.global);
+	const REDUX = useStoreDispatch();
+
 	useEffect(() => {
+		console.log("[useEffect] -> redux");
 		console.log(REDUX_STORE);
 	}, [REDUX_STORE]);
 
-	const handleRedux = (id: string): void => {
-		REDUX(get__user(id));
+	const handleUserRedux = (id: string): void => {
+		const users = REDUX_STORE.user_redux;
+		const result = users.find((user) => user.id === id);
+		console.log("[handleUserRedux] -> redux");
+		console.log(result);
+	};
+
+	// zustand
+	const {
+		count_zustand,
+		user_zustand,
+		increment__zustand,
+		decrement__zustand,
+		reset__zustand,
+	} = useZustandStore();
+
+	useEffect(() => {
+		console.log("[useEffect] -> zustand");
+		console.log(useZustandStore.getState());
+	}, [count_zustand, user_zustand]);
+
+	const handleUserZustand = (id: string): void => {
+		const users = user_zustand;
+		const result = users.find((user) => user.id === id);
+		console.log("[handleUserZustand] -> zustand");
+		console.log(result);
 	};
 
 	return (
@@ -45,11 +79,29 @@ export default function App(): T_FunctionComponent {
 				</a>
 			</div>
 			<h1>Vite + React + Bun</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<button onClick={() => handleRedux("admin")}>redux</button>
+			<div className="cards">
+				<div className="card">
+					<h3>useState</h3>
+					<button onClick={() => setCount((count) => count + 1)}>
+						count is {count}
+					</button>
+				</div>
+				<div className="card">
+					<h3>Redux</h3>
+					<p>count is {REDUX_STORE.count_redux}</p>
+					<button onClick={() => REDUX(increment__redux())}>increment</button>
+					<button onClick={() => REDUX(decrement__redux())}>decrement</button>
+					<button onClick={() => REDUX(reset__redux())}>reset</button>
+					<button onClick={() => handleUserRedux("user")}>get user</button>
+				</div>
+				<div className="card">
+					<h3>Zustand</h3>
+					<p>count is {count_zustand}</p>
+					<button onClick={() => increment__zustand()}>increment</button>
+					<button onClick={() => decrement__zustand()}>decrement</button>
+					<button onClick={() => reset__zustand()}>reset</button>
+					<button onClick={() => handleUserZustand("admin")}>get admin</button>
+				</div>
 			</div>
 			<p>
 				Edit "<code>src/components/app/App.tsx</code>" and save to test HMR
