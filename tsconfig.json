@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
     "moduleResolution": "bundler",
@@ -33,8 +33,12 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./public/*"]
+    }
   },
-  "include": ["src/**/*", "tests/**/*", "e2e/**/*"],
+  "include": ["*.ts", "**/*.ts", "**/*.tsx",],
   "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
