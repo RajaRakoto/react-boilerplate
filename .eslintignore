@@ -89,25 +89,9 @@ typings
 .tern-port
 
 # own
-.github
-.gitignore
-.eslintignore
-.eslintrc
-.prettierignore
-.prettierrc
-.dockerignore
-LICENSE
-README.md
-bun.lockb
-gruntfile.cjs
-package.json
-tsconfig.json
-tsconfig.release.json
-playwright.config.ts
-vite.config.ts
-jest.config.json
-scripts/*.js
-postcss.config.js
-tailwind.config.js
+*.cjs
+*.mjs
+*.js
+*.ts
 backups
 tmp
