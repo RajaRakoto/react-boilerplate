@@ -10,5 +10,3 @@ src/assets
       ├── file.png
       └── file.webp
 ```
-
-

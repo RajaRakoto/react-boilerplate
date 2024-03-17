@@ -1,6 +1,6 @@
 # react-boilerplate 🚀
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com) [![forthebadge](https://github.com/RajaRakoto/github-docs/blob/master/badge/build-by.svg?raw=true)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com) [![forthebadge](https://github.com/RajaRakoto/github-docs/blob/master/badge/build-by.svg?raw=true)](https://forthebadge.com)
 
 ![Git](https://img.shields.io/badge/-Git-777?style=flat&logo=git&logoColor=F05032&labelColor=ffffff) ![Gitub](https://img.shields.io/badge/-Gitub-777?style=flat&logo=github&logoColor=777&labelColor=ffffff)
 
@@ -33,7 +33,7 @@ Instant Value - All basic tools included and configured:
 
 ---
 
-### 📌 Usage 
+### 📌 Usage
 
 To use this template, use the following commands:
 
@@ -66,12 +66,12 @@ bun run build
 ```bash
 bun run build
 docker build . -t <container_name> # eg: docker build . -t todo-app
-docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 8080:80 
+docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 8080:80
 ```
 
 ---
 
-### 📌 NPM Scripts 
+### 📌 NPM Scripts
 
 **Preview**
 
@@ -94,7 +94,6 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 - 📜 `test:unit` - Run unit testing with Bun.js.
 - 📜 `test:unit:watch` - Interactive watch mode to automatically re-run unit testing with Bun.js.
 - 📜 `test:e2e` - Run end to end (e2e) testing with Playwright.
-
 
 **Linting and Formatting**
 
