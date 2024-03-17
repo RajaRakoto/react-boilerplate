@@ -1,7 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "Minimalistic boilerplate to quick-start React.js development in TypeScript, optimized for blazing-fast performance Bun & Vite 🚀",
+  "description": "Minimalistic boilerplate to quick-start React.js development in TypeScript, optimized for blazing-fast performance with Bun & Vite 🚀",
   "author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
   "license": "MIT",
   "type": "module",
