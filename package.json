@@ -29,7 +29,7 @@
 		"starter"
 	],
 	"engines": {
-		"react": ">= 18"
+		"react": ">=18.2.0"
 	},
 	"scripts": {
 		"preview": "vite preview",
