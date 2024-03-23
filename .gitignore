@@ -10,8 +10,6 @@ lerna-debug.log*
 # production
 build
 dist
-dist-ssr
-*.local
 
 # dependencies
 .pnp
@@ -70,7 +68,7 @@ typings
 
 # dotenv environment variables file
 .env
-.env.test
+.env.local
 
 # output
 *.tgz
