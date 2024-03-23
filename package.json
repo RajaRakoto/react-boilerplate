@@ -80,7 +80,7 @@
 		"load-grunt-tasks": "^5.1.0",
 		"npm-check-updates": "^16.14.15",
 		"playwright": "^1.42.1",
-		"postcss-import": "^16.0.1",
+		"postcss": "^8.4.38",
 		"prettier": "^3.2.4",
 		"rimraf": "^5.0.5",
 		"sass": "^1.72.0",
