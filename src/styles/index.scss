@@ -8,11 +8,27 @@
 	font-family: "Quicksand", Inter, system-ui, Avenir, Helvetica, Arial,
 		sans-serif;
 	color: #333;
-	background-color: #f7f7f7 !important;
+
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+
+	@media (prefers-color-scheme: dark) {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-	min-height: 100vh !important;
+	height: 100vh !important;
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
 }
 
 h1 {
