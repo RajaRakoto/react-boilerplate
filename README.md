@@ -75,7 +75,7 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 
 **Preview**
 
-- 📜 `preview` - run your application with preview mode.
+- 📜 `preview` - run your app with preview mode.
 
 **Clean**
 
