@@ -116,6 +116,10 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 - 📜 `npm-version:minor` - Increments the minor version number of your project using npm.
 - 📜 `npm-version:patch` - Increments the version patch number of your project using npm.
 
+**NVM**
+
+- 📜 `nvm - Manage multiple node.js versions. Easily switch between node versions per project to ensure compatibility.
+
 **Scripts**
 
 - 📜 `script:sass-charset` - Adds the @charset "UTF-8" declaration at the beginning of all SCSS files in the project.
