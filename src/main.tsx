@@ -5,14 +5,14 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 
 /* components */
-import Demo from "./components/demo/Demo.tsx";
+import Demo from "@/components/demo/Demo.tsx";
 
 /* store - redux */
-import store from "./stores/redux/store.ts";
+import store from "@/stores/redux/store.ts";
 
 /* styles */
-import "./styles/index.scss";
-// import "./styles/tailwind.scss";
+import "@/styles/tailwind.scss";
+import "@/styles/index.scss";
 
 // =======================================
 

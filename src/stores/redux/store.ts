@@ -2,7 +2,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 
 /* reducer */
-import globalReducer from "./reducer/global";
+import globalReducer from "@/stores/redux/reducer/global";
 
 // =======================================
 

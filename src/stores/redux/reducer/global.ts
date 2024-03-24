@@ -2,7 +2,7 @@
 import { createSlice } from "@reduxjs/toolkit"; // you can import PayloadAction -> action: PayloadAction<T>
 
 /* types */
-import { I_InitialeState } from "../types";
+import { I_InitialeState } from "@/stores/redux/types";
 
 // =======================================
 
