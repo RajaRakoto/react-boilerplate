@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 /* assets */
-import viteLogo from "~/images/vite.svg";
-import reactLogo from "~/images/react.svg";
-import bunLogo from "~/images/bun.svg";
+import viteLogo from "/images/vite.svg";
+import reactLogo from "/images/react.svg";
+import bunLogo from "/images/bun.svg";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
@@ -66,10 +66,10 @@ export default function Demo(): T_FunctionComponent {
 	};
 
 	return (
-		<>
-			<div>
+		<div id="demo">
+			<div className="flex flex-row flex-wrap gap-5 justify-center items-center">
 				<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-					<img src={viteLogo} className="logo vite" alt="Vite logo" />
+					<img src={viteLogo} className="logo vite" alt="Vite.js logo" />
 				</a>
 				<a href="https://react.dev" target="_blank" rel="noopener noreferrer">
 					<img src={reactLogo} className="logo react" alt="React.js logo" />
@@ -113,6 +113,6 @@ export default function Demo(): T_FunctionComponent {
 			<p className="read-the-docs">
 				Click on the Vite, React and Bun logos to learn more
 			</p>
-		</>
+		</div>
 	);
 }
