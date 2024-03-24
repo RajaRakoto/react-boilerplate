@@ -3,6 +3,12 @@ import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
 	plugins: [react()],
+	resolve: {
+		alias: {
+			"@": "/src",
+			"~": "/public",
+		},
+	},
 	server: {
 		host: true,
 		strictPort: true,
