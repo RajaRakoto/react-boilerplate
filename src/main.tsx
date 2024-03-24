@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 
 /* components */
-import App from "./components/app/App.tsx";
+import Demo from "./components/demo/Demo.tsx";
 
 /* store - redux */
 import store from "./stores/redux/store.ts";
@@ -19,7 +19,7 @@ import "./styles/index.scss";
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<Provider store={store}>
-			<App />
+			<Demo />
 		</Provider>
 	</React.StrictMode>,
 );
