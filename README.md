@@ -133,6 +133,6 @@ You can also check out my other starter projects:
 - 🚀 [bun-boilerplate](https://github.com/RajaRakoto/bun-boilerplate)
 - 🚀 [node-boilerplate](https://github.com/RajaRakoto/node-boilerplate)
 - 🚀 [next-boilerplate](https://github.com/RajaRakoto/next-boilerplate)
-- 🚀 [quik-boilerplate](https://github.com/RajaRakoto/quik-boilerplate)
+- 🚀 [qwik-boilerplate](https://github.com/RajaRakoto/qwik-boilerplate)
 - 🚀 [vscode-boilerplate](https://github.com/RajaRakoto/vscode-boilerplate)
 - 🚀 [cli-boilerplate](https://github.com/RajaRakoto/cli-boilerplate)
