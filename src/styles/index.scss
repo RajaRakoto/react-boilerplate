@@ -1,25 +1,15 @@
 @charset "UTF-8";
 
-$font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-$text-color: rgba(255, 255, 255, 0.87);
-$dark-background: #242424;
-$light-text-color: #213547;
-$light-background: #ffffff;
-$link-color: #646cff;
-$link-hover-color: #535bf2;
-$link-light-hover-color: #747bff;
-$button-background-dark: #1a1a1a;
-$button-background-light: #f9f9f9;
-$button-border-color: #646cff;
+@import "sass/_animations.scss";
 
 :root {
-	font-family: $font-family;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
 	color-scheme: light dark;
-	color: $text-color;
-	background-color: $dark-background;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -27,21 +17,21 @@ $button-border-color: #646cff;
 	-moz-osx-font-smoothing: grayscale;
 
 	@media (prefers-color-scheme: light) {
-		color: $light-text-color;
-		background-color: $light-background;
+		color: #213547;
+		background-color: #ffffff;
 	}
 }
 
 a {
 	font-weight: 500;
-	color: $link-color;
+	color: #646cff;
 	text-decoration: inherit;
 
 	&:hover {
-		color: $link-hover-color;
+		color: #535bf2;
 
 		@media (prefers-color-scheme: light) {
-			color: $link-light-hover-color;
+			color: #747bff;
 		}
 	}
 }
@@ -59,6 +49,10 @@ h1 {
 	line-height: 1.1;
 }
 
+h3 {
+	font-size: 1.8em;
+}
+
 button {
 	border-radius: 8px;
 	border: 1px solid transparent;
@@ -66,12 +60,12 @@ button {
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
-	background-color: $button-background-dark;
+	background-color: #1a1a1a;
 	cursor: pointer;
 	transition: border-color 0.25s;
 
 	&:hover {
-		border-color: $button-border-color;
+		border-color: #646cff;
 	}
 
 	&:focus,
@@ -80,6 +74,6 @@ button {
 	}
 
 	@media (prefers-color-scheme: light) {
-		background-color: $button-background-light;
+		background-color: #f9f9f9;
 	}
 }
