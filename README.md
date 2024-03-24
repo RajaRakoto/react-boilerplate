@@ -118,7 +118,7 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 
 **NVM**
 
-- 📜 `nvm - Manage multiple node.js versions. Easily switch between node versions per project to ensure compatibility.
+- 📜 `nvm` - Manage multiple node.js versions. Easily switch between node versions per project to ensure compatibility.
 
 **Scripts**
 
