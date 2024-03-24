@@ -75,7 +75,7 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 
 **Preview**
 
-- 📜 `preview` - run your app with preview mode.
+- 📜 `preview` - Run your app with preview mode.
 
 **Clean**
 
@@ -83,11 +83,11 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 
 **Development**
 
-- 📜 `dev` - launch Vite.js development server using hot module remplacement (HMR).
+- 📜 `dev` - Launch Vite.js development server using hot module remplacement (HMR).
 
 **Build**
 
-- 📜 `build` - build faster with Vite.js.
+- 📜 `build` - Build faster with Vite.js.
 
 **Testing**
 
