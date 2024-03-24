@@ -10,10 +10,11 @@ lerna-debug.log*
 # production
 build
 dist
-dist-ssr
-*.local
 
 # dependencies
+.pnp
+.pnp.js
+.yarn/install-state.gz
 node_modules
 bower_components
 jspm_packages
@@ -44,9 +45,6 @@ lib-cov
 
 # editor
 .vscode
-!.vscode/tasks.js
-!.vscode/extensions.json
-.vscode-test
 .idea
 .DS_Store
 *.suo
@@ -69,14 +67,9 @@ typings
 .rts2_cache_umd/
 .node_repl_history
 
-# docker
-.dockerignore
-docker-compose.yaml
-Dockerfile
-
 # dotenv environment variables file
 .env
-.env.test
+.env.local
 
 # output
 *.tgz
@@ -93,6 +86,11 @@ Dockerfile
 # ternjs
 .tern-port
 
+# docker
+.dockerignore
+docker-compose.yaml
+Dockerfile
+
 # own
 .git
 .gitignore
@@ -104,5 +102,6 @@ LICENSE
 README.md
 gruntfile.cjs
 config
+playwright-report
 backups
 tmp
