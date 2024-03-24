@@ -1,30 +1,30 @@
 import { useState, useEffect } from "react";
 
 /* assets */
-import viteLogo from "/vite.svg";
-import reactLogo from "../../assets/icons/react.svg";
-import bunLogo from "../../assets/icons/bun.svg";
+import viteLogo from "~/images/vite.svg";
+import reactLogo from "~/images/react.svg";
+import bunLogo from "~/images/bun.svg";
 
 /* store - redux */
-import { useStoreDispatch, useStoreSelector } from "../../hooks/redux";
+import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
 import {
 	increment__redux,
 	decrement__redux,
 	reset__redux,
-} from "../../stores/redux/reducer/global";
+} from "@/stores/redux/reducer/global";
 
 /* store - zustand */
-import useZustandStore from "../../stores/zustand/store";
+import useZustandStore from "@/stores/zustand/store";
 
 /* styles */
-import "./App.scss";
+import "@/components/demo/Demo.scss";
 
 /* types */
-import { T_FunctionComponent } from "../../@types";
+import { T_FunctionComponent } from "@/@types";
 
 // =======================================
 
-export default function App(): T_FunctionComponent {
+export default function Demo(): T_FunctionComponent {
 	// basic state
 	const [count, setCount] = useState(0);
 
@@ -68,14 +68,14 @@ export default function App(): T_FunctionComponent {
 	return (
 		<>
 			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src={viteLogo} className="logo" alt="Vite logo" />
+				<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+					<img src={viteLogo} className="logo vite" alt="Vite logo" />
 				</a>
-				<a href="https://react.dev" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
+				<a href="https://react.dev" target="_blank" rel="noopener noreferrer">
+					<img src={reactLogo} className="logo react" alt="React.js logo" />
 				</a>
-				<a href="https://bun.sh/" target="_blank">
-					<img src={bunLogo} className="logo bun" alt="Bun logo" />
+				<a href="https://bun.sh/" target="_blank" rel="noopener noreferrer">
+					<img src={bunLogo} className="logo bun" alt="Bun.js logo" />
 				</a>
 			</div>
 			<h1>Vite + React + Bun</h1>

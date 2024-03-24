@@ -5,9 +5,9 @@ The components directory should hold components that are intended for use throug
 ```
 src
 └── components
-        ├── app
-        │   ├── App.tsx
-        │   └── App.scss
+        ├── demo
+        │   ├── Demo.tsx
+        │   └── Demo.scss
         └── example
             ├── Example.tsx
             └── Example.scss
