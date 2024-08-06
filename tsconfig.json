@@ -35,10 +35,10 @@
 		"isolatedModules": true,
 		"paths": {
 			"@/*": ["./src/*"],
-			"~/*": ["./public/*"],
-		},
+			"~/*": ["./public/*"]
+		}
 	},
 	"include": ["*.ts", "**/*.ts", "**/*.tsx"],
 	"exclude": ["./node_modules"],
-	"references": [{ "path": "./tsconfig.node.json" }],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }
