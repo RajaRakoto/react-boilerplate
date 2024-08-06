@@ -9,6 +9,6 @@ interface ImportMetaEnv {
 	// more env variables...
 }
 
-interface ImportMeta {
+interface _ImportMeta {
 	readonly env: ImportMetaEnv;
 }

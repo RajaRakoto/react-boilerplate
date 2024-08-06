@@ -56,7 +56,7 @@ export default function Demo(): T_FunctionComponent {
 	useEffect(() => {
 		console.log("[useEffect] -> zustand");
 		console.log(useZustandStore.getState());
-	}, [count_zustand, user_zustand]);
+	});
 
 	const handleUserZustand = (id: string): void => {
 		const users = user_zustand;
