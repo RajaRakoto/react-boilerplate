@@ -16,10 +16,16 @@ import "@/styles/index.scss";
 
 // =======================================
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-	<React.StrictMode>
-		<Provider store={store}>
-			<Demo />
-		</Provider>
-	</React.StrictMode>,
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement) {
+	ReactDOM.createRoot(rootElement).render(
+		<React.StrictMode>
+			<Provider store={store}>
+				<Demo />
+			</Provider>
+		</React.StrictMode>,
+	);
+} else {
+	console.error("Element 'root' not found in the document.");
+}

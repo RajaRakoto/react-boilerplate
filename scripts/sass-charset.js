@@ -7,7 +7,8 @@ const path = require("node:path");
 
 // recursively browse files in a directory
 function traverseDirectory(dir) {
-	fs.readdirSync(dir).forEach((file) => {
+	const files = fs.readdirSync(dir);
+	for (const file of files) {
 		const filePath = path.join(dir, file);
 		const stat = fs.statSync(filePath);
 
@@ -21,7 +22,7 @@ function traverseDirectory(dir) {
 				processSCSSFile(filePath);
 			}
 		}
-	});
+	}
 }
 
 // add utf8 at the beginning of an SCSS file
