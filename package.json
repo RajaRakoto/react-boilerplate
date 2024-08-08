@@ -33,7 +33,7 @@
 		"preview": "vite preview",
 		"clean": "rimraf build dist coverage playwright-report",
 		"dev": "vite",
-		"build": "bun run clean && tsc -b && vite build",
+		"build": "bun run clean && tsc -b && rimraf vite.config.js && vite build",
 		"test:unit": "bun test ./tests/*.test.ts",
 		"test:unit:watch": "bun test --watch ./tests/*.test.ts",
 		"test:e2e": "rimraf playwright-report && playwright test ./e2e/*.spec.ts",
