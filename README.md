@@ -12,10 +12,9 @@ Instant Value - All basic tools included and configured:
 - 🌐 React.js >= 18
 - 🧅 Use Bun as package manager
 - 🌈 ESM
-- 🧹 ESlint with some initial rules recommendation
+- 🧪 Biome for code formatting and linting
 - ✅ Jest or Bun test for fast unit testing and code coverage
 - 📚 Type definitions for Bun.js and Jest
-- 🎨 Prettier to enforce consistent code style
 - ⚙️ EditorConfig for consistent coding style
 - 📦 NPM scripts for common operations
 - 📝 Simple example of Tsx code
@@ -97,8 +96,10 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 
 **Linting and Formatting**
 
-- 📜 `eslint` - Lint source files with ESLint.
-- 📜 `prettier` - Reformat source files with Prettier.
+- 📜 `biome:start` - Starts the Biome daemon server. You can specify a custom configuration file path using the `--config-path` option.
+- 📜 `biome:stop` - Stops the Biome daemon server.
+- 📜 `biome:fix` - Runs a source code check and applies automatic fixes (linter & formatter) according to the defined rules.
+- 📜 `biome:unsafe` - Works like `biome:fix`, but may apply more invasive or risky changes.
 
 **Backup and Dependency Management**
 
