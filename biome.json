@@ -143,9 +143,6 @@
 		"ignore": [
 			"build",
 			"dist",
-			".pnp",
-			".pnp.js",
-			".yarn/install-state.gz",
 			"node_modules",
 			"bower_components",
 			"jspm_packages",
