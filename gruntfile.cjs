@@ -2,7 +2,7 @@
  * @description: gruntfile for react boilerplate
  * @requires: grunt | load-grunt-tasks | grunt-contrib-compress
  */
-module.exports = function (grunt) {
+module.exports = (grunt) => {
 	require("load-grunt-tasks")(grunt);
 
 	// all files destination (example)
