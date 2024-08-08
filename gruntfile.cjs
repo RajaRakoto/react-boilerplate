@@ -22,14 +22,14 @@ module.exports = function (grunt) {
 		compress: {
 			main: {
 				options: {
-					archive: backupsDestination + "main.tar.gz",
+					archive: `${backupsDestination}public.tar.gz`,
 				},
 				files: [{ src: ["./*", "./.*"] }],
 				filter: "isFile",
 			},
 			github: {
 				options: {
-					archive: backupsDestination + "github.tar.gz",
+					archive: `${backupsDestination}github.tar.gz`,
 				},
 				expand: true,
 				cwd: "./.github/",
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 			},
 			vscode: {
 				options: {
-					archive: backupsDestination + "vscode.tar.gz",
+					archive: `${backupsDestination}vscode.tar.gz`,
 				},
 				expand: true,
 				cwd: "./.vscode/",
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
 			},
 			e2e: {
 				options: {
-					archive: backupsDestination + "e2e.tar.gz",
+					archive: `${backupsDestination}e2e.tar.gz`,
 				},
 				expand: true,
 				cwd: "./e2e/",
@@ -56,7 +56,7 @@ module.exports = function (grunt) {
 			},
 			public: {
 				options: {
-					archive: backupsDestination + "public.tar.gz",
+					archive: `${backupsDestination}public.tar.gz`,
 				},
 				expand: true,
 				cwd: "./public/",
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
 			},
 			scripts: {
 				options: {
-					archive: backupsDestination + "scripts.tar.gz",
+					archive: `${backupsDestination}scripts.tar.gz`,
 				},
 				expand: true,
 				cwd: "./scripts/",
@@ -74,7 +74,7 @@ module.exports = function (grunt) {
 			},
 			src: {
 				options: {
-					archive: backupsDestination + "src.tar.gz",
+					archive: `${backupsDestination}src.tar.gz`,
 				},
 				expand: true,
 				cwd: "./src/",
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
 			},
 			tests: {
 				options: {
-					archive: backupsDestination + "tests.tar.gz",
+					archive: `${backupsDestination}tests.tar.gz`,
 				},
 				expand: true,
 				cwd: "./tests/",
@@ -92,7 +92,7 @@ module.exports = function (grunt) {
 			},
 			tmp: {
 				options: {
-					archive: backupsDestination + "tmp.tar.gz",
+					archive: `${backupsDestination}tmp.tar.gz`,
 				},
 				expand: true,
 				cwd: "./tmp/",

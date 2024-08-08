@@ -2,7 +2,7 @@
 import { create } from "zustand";
 
 /* types */
-import { CreateStore } from "@/stores/zustand/types";
+import type { CreateStore } from "@/stores/zustand/types";
 
 // =======================================
 

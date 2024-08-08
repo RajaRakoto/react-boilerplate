@@ -1,5 +1,5 @@
 /* types */
-import { I_User } from "@/@types";
+import type { I_User } from "@/@types";
 
 export interface CreateStore {
 	count_zustand: number;

@@ -20,7 +20,7 @@ import useZustandStore from "@/stores/zustand/store";
 import "@/components/demo/Demo.scss";
 
 /* types */
-import { T_FunctionComponent } from "@/@types";
+import type { T_FunctionComponent } from "@/@types";
 
 // =======================================
 
@@ -82,25 +82,41 @@ export default function Demo(): T_FunctionComponent {
 			<div className="cards">
 				<div className="card">
 					<h3>useState</h3>
-					<button onClick={() => setCount((count) => count + 1)}>
+					<button type="button" onClick={() => setCount((count) => count + 1)}>
 						count is {count}
 					</button>
 				</div>
 				<div className="card">
 					<h3>Redux</h3>
 					<p>count is {REDUX_STORE.count_redux}</p>
-					<button onClick={() => REDUX(increment__redux())}>increment</button>
-					<button onClick={() => REDUX(decrement__redux())}>decrement</button>
-					<button onClick={() => REDUX(reset__redux())}>reset</button>
-					<button onClick={() => handleUserRedux("user")}>get user</button>
+					<button type="button" onClick={() => REDUX(increment__redux())}>
+						increment
+					</button>
+					<button type="button" onClick={() => REDUX(decrement__redux())}>
+						decrement
+					</button>
+					<button type="button" onClick={() => REDUX(reset__redux())}>
+						reset
+					</button>
+					<button type="button" onClick={() => handleUserRedux("user")}>
+						get user
+					</button>
 				</div>
 				<div className="card">
 					<h3>Zustand</h3>
 					<p>count is {count_zustand}</p>
-					<button onClick={() => increment__zustand()}>increment</button>
-					<button onClick={() => decrement__zustand()}>decrement</button>
-					<button onClick={() => reset__zustand()}>reset</button>
-					<button onClick={() => handleUserZustand("admin")}>get admin</button>
+					<button type="button" onClick={() => increment__zustand()}>
+						increment
+					</button>
+					<button type="button" onClick={() => decrement__zustand()}>
+						decrement
+					</button>
+					<button type="button" onClick={() => reset__zustand()}>
+						reset
+					</button>
+					<button type="button" onClick={() => handleUserZustand("admin")}>
+						get admin
+					</button>
 				</div>
 			</div>
 			<p>
