@@ -141,25 +141,25 @@ module.exports = (grunt) => {
 				case "cyan":
 					console.log(`\n${taskTitle}`.cyan.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.cyan + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.cyan} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "magenta":
 					console.log(`\n${taskTitle}`.magenta.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.magenta + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.magenta} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "yellow":
 					console.log(`\n${taskTitle}`.yellow.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.yellow + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.yellow} -> ${taskStatus[index]}`);
 					});
 					break;
 				case "blue":
 					console.log(`\n${taskTitle}`.blue.inverse.bold);
 					taskNames.forEach((taskNames, index) => {
-						console.log(taskNames.blue + ` -> ${taskStatus[index]}`);
+						console.log(`${taskNames.blue} -> ${taskStatus[index]}`);
 					});
 					break;
 				default:
