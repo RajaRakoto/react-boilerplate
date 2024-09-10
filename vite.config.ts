@@ -24,16 +24,16 @@ export default defineConfig({
 		host: false,
 		strictPort: true,
 	},
-  css: {
-    devSourcemap: false,
-    preprocessorOptions: {
-      scss: {
-        additionalData: (source: string, id: string) =>
-          !id.includes("node_modules/@raja-rakoto/plum") ? source : "",
-      },
-    },
-  },
-  publicDir: "./public",
+	css: {
+		devSourcemap: false,
+		preprocessorOptions: {
+			scss: {
+				additionalData: (source: string, id: string) =>
+					!id.includes("node_modules/@raja-rakoto/plum") ? source : "",
+			},
+		},
+	},
+	publicDir: "./public",
 });
 
 // ======================== utils =========================

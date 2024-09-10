@@ -67,7 +67,7 @@ export default function Demo(): T_FunctionComponent {
 
 	return (
 		<div id="demo">
-			<div className="flex flex-row flex-wrap gap-5 justify-center items-center">
+			<div className="flex flex-row flex-wrap items-center justify-center gap-5">
 				<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
 					<img src={viteLogo} className="logo vite" alt="Vite.js logo" />
 				</a>

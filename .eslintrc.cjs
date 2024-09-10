@@ -1,28 +1,28 @@
 module.exports = {
-  root: true,
+	root: true,
 	env: {
 		browser: true,
 		es6: true,
 		node: true,
 	},
 	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'plugin:react-hooks/recommended',
-		'plugin:jest/recommended',
-		'prettier'
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:jest/recommended",
+		"prettier",
 	],
-	parser: '@typescript-eslint/parser',
+	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		tsconfigRootDir: __dirname,
 		project: ["./tsconfig.json"],
-		ecmaVersion: 'latest',
+		ecmaVersion: "latest",
 		sourceType: "module",
 		ecmaFeatures: {
 			jsx: true,
 		},
 	},
-	plugins: ['@typescript-eslint', 'jest', 'react-refresh'],
+	plugins: ["@typescript-eslint", "jest", "react-refresh"],
 	rules: {
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
@@ -40,9 +40,9 @@ module.exports = {
 		"@typescript-eslint/no-unused-vars": ["warn"],
 		"@typescript-eslint/consistent-type-imports": "warn",
 		"@typescript-eslint/no-unnecessary-condition": "warn",
-		'react-refresh/only-export-components': [
-			'warn',
-			{ allowConstantExport: true }
-		]
-	}
+		"react-refresh/only-export-components": [
+			"warn",
+			{ allowConstantExport: true },
+		],
+	},
 };
