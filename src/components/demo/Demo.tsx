@@ -120,7 +120,7 @@ export default function Demo(): T_FunctionComponent {
 				</div>
 			</div>
 			<p>
-				Edit "<code>src/components/app/App.tsx</code>" and save to test HMR
+				Edit "<code>src/components/demo/Demo.tsx</code>" and save to test HMR
 			</p>
 			<p>
 				You can view the outcome in the browser console to experiment with{" "}
