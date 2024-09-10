@@ -11,27 +11,16 @@
 :root {
 	font-family: "Quicksand", Inter, system-ui, Avenir, Helvetica, Arial,
 		sans-serif;
-	color: #333;
-
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
-
-	@media (prefers-color-scheme: dark) {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
 }
 
 /* SHELL ---------------------------------------- */
 body {
-	height: 100vh !important;
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
+  background: #e4fbff;
+	background: -webkit-linear-gradient(
+		0deg,
+		#e4fbff 0%,
+		#b8f3ff 50%,
+		#a0e9ff 100%
+	);
+	background: linear-gradient(0deg, #e4fbff 0%, #b8f3ff 50%, #a0e9ff 100%);
 }
