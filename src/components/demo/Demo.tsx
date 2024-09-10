@@ -69,13 +69,31 @@ export default function Demo(): T_FunctionComponent {
 		<div id="demo">
 			<div className="flex flex-row flex-wrap items-center justify-center gap-5">
 				<a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-					<img src={viteLogo} className="logo vite" alt="Vite.js logo" />
+					<img
+						src={viteLogo}
+						className="logo vite"
+						alt="Vite.js logo"
+						width={164}
+						height={164}
+					/>
 				</a>
 				<a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-					<img src={reactLogo} className="logo react" alt="React.js logo" />
+					<img
+						src={reactLogo}
+						className="logo react"
+						alt="React.js logo"
+						width={164}
+						height={164}
+					/>
 				</a>
 				<a href="https://bun.sh/" target="_blank" rel="noopener noreferrer">
-					<img src={bunLogo} className="logo bun" alt="Bun.js logo" />
+					<img
+						src={bunLogo}
+						className="logo bun"
+						alt="Bun.js logo"
+						width={164}
+						height={164}
+					/>
 				</a>
 			</div>
 			<h1>Vite + React + Bun</h1>
