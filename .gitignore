@@ -14,13 +14,16 @@ dist
 # dependencies
 .pnp
 .pnp.js
-.yarn/install-state.gz
+.yarn
 node_modules
 bower_components
 jspm_packages
+*.local
 
-# yarn integrity file
+# yarn
 .yarn-integrity
+.yarn/*
+!.yarn/releases
 
 # reports
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -65,6 +68,9 @@ typings
 .rts2_cache_es/
 .rts2_cache_umd/
 .node_repl_history
+.mf
+.rollup.cache
+tsconfig.tsbuildinfo
 
 # dotenv environment variables file
 .env
