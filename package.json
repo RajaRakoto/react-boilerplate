@@ -5,14 +5,18 @@
 	"author": "Raja Rakotonirina <raja.rakoto7@gmail.com>",
 	"license": "MIT",
 	"type": "module",
-	"main": "./dist/index.html",
+	"files": ["dist"],
+	"private": true,
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/RajaRakoto/react-boilerplate.git"
 	},
 	"homepage": "https://github.com/RajaRakoto/react-boilerplate#readme",
 	"bugs": "https://github.com/RajaRakoto/react-boilerplate/issues",
-	"files": ["dist"],
+	"engines-annotation": "Need React 18.2.0 or higher",
+	"engines": {
+		"react": ">=18.2.0"
+	},
 	"keywords": [
 		"typescript",
 		"reactjs",
@@ -26,9 +30,6 @@
 		"template",
 		"starter"
 	],
-	"engines": {
-		"react": ">=18.2.0"
-	},
 	"scripts": {
 		"preview": "vite preview",
 		"clean": "rimraf build dist coverage playwright-report",
@@ -41,7 +42,9 @@
 		"biome:stop": "biome stop",
 		"biome:fix": "biome check --fix .",
 		"biome:unsafe": "biome check --fix --unsafe .",
-		"backup": "grunt backup",
+		"eslint": "eslint --config .eslintrc --report-unused-disable-directives --max-warnings 0 .",
+		"prettier": "prettier --config .prettierrc --write .",
+		"backups": "grunt backups",
 		"pkg-check": "depcheck",
 		"pkg-upgrade": "ncu --interactive --format group --packageManager bun",
 		"versioning": "ungit",
@@ -63,12 +66,20 @@
 		"@playwright/test": "^1.46.0",
 		"@total-typescript/ts-reset": "^0.5.1",
 		"@types/bun": "latest",
+    "@types/eslint": "8.56.10",
 		"@types/jest": "^29.5.12",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
+		"@typescript-eslint/eslint-plugin": "7.16.1",
+		"@typescript-eslint/parser": "7.16.1",
 		"@vitejs/plugin-react-swc": "^3.7.0",
 		"autoprefixer": "^10.4.20",
 		"depcheck": "^1.4.7",
+		"eslint": "8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-jest": "^28.8.3",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.11",
 		"grunt-cli": "^1.5.0",
 		"grunt-contrib-compress": "^2.0.0",
 		"jest": "^29.7.0",
@@ -76,12 +87,14 @@
 		"npm-check-updates": "^17.0.6",
 		"playwright": "^1.46.0",
 		"postcss": "^8.4.41",
+		"prettier": "^3.3.3",
 		"rimraf": "^6.0.1",
-		"sass": "^1.77.8",
+		"sass": "1.77.6",
 		"tailwindcss": "^3.4.9",
 		"ts-jest": "^29.2.4",
 		"typescript": "^5.5.4",
 		"ungit": "^1.5.26",
-		"vite": "^5.4.0"
+		"vite": "^5.4.0",
+		"vite-tsconfig-paths": "^5.0.1"
 	}
 }
