@@ -2,8 +2,12 @@
 
 @import "sass/_animations.scss";
 @import "sass/_buttons.scss";
+@import "sass/_headings.scss";
 @import "sass/_typography.scss";
 
+// @import "tailwind.scss";
+
+/* ROOT ---------------------------------------- */
 :root {
 	font-family: "Quicksand", Inter, system-ui, Avenir, Helvetica, Arial,
 		sans-serif;
@@ -20,6 +24,7 @@
 	}
 }
 
+/* SHELL ---------------------------------------- */
 body {
 	height: 100vh !important;
 	color: rgb(var(--foreground-rgb));
@@ -29,13 +34,4 @@ body {
 			rgb(var(--background-end-rgb))
 		)
 		rgb(var(--background-start-rgb));
-}
-
-h1 {
-	font-size: 3.2em !important;
-	line-height: 1.1 !important;
-}
-
-h3 {
-	font-size: 1.5em !important;
 }

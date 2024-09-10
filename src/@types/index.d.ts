@@ -1,3 +1,5 @@
+import type React from "react";
+
 export type T_FunctionComponent = React.ReactElement | null;
 
 export type T_Mail = `${string}@${string}.com`;

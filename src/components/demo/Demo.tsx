@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 /* assets */
-import viteLogo from "/images/vite.svg";
-import reactLogo from "/images/react.svg";
-import bunLogo from "/images/bun.svg";
+import viteLogo from "@/assets/images/vite.svg";
+import reactLogo from "@/assets/images/react.svg";
+import bunLogo from "@/assets/images/bun.svg";
 
 /* store - redux */
 import { useStoreDispatch, useStoreSelector } from "@/hooks/redux";
