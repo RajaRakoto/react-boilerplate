@@ -13,7 +13,7 @@
 	},
 	"homepage": "https://github.com/RajaRakoto/react-boilerplate#readme",
 	"bugs": "https://github.com/RajaRakoto/react-boilerplate/issues",
-	"engines-annotation": "Need React 18.2.0 or higher",
+	"engines-annotation": "Require React 18.2.0 or higher",
 	"engines": {
 		"react": ">=18.2.0"
 	},
