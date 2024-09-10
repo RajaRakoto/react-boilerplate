@@ -105,9 +105,8 @@
 		}
 	},
 	"overrides": [
-		{ "include": ["*.{js,cjs,mjs,ts,mts,jsx,tsx}"] },
 		{
-			"include": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+			"include": ["*.{js,cjs,cts,mjs,ts,mts,jsx,tsx}"],
 			"linter": {
 				"rules": {
 					"correctness": {
@@ -143,9 +142,17 @@
 		"ignore": [
 			"build",
 			"dist",
+			"tsconfig.tsbuildinfo",
+			"tsdoc-metadata.json",
+			".pnp",
+			".pnp.js",
+			".yarn",
 			"node_modules",
 			"bower_components",
 			"jspm_packages",
+			".rollup.cache",
+			".cache",
+			".netlify",
 			"backups",
 			"tmp"
 		]
