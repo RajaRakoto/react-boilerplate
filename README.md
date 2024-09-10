@@ -12,7 +12,7 @@
 
 Instant Value - All basic tools included and configured:
 
-- 🚀 Typescript >= 5.3
+- 🚀 Typescript >= 5.5.4
 - 🌐 React.js >= 18
 - 🧅 Use Bun as package manager
 - 🌈 ESM
