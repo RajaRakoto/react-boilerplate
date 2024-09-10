@@ -13,7 +13,7 @@
 Instant Value - All basic tools included and configured:
 
 - 🚀 Typescript >= 5.5.4
-- 🌐 React.js >= 18
+- 🌐 React.js >= 18.3.1
 - 🧅 Use Bun as package manager
 - 🌈 ESM
 - 🧹 ESlint with some initial rules recommendation
