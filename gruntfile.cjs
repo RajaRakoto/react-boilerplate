@@ -17,12 +17,12 @@ module.exports = (grunt) => {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("./package.json"),
 		/**
-		 * Compress files and folders (incremental backup)
+		 * Compress files and folders (incremental backups)
 		 */
 		compress: {
 			main: {
 				options: {
-					archive: `${backupsDestination}public.tar.gz`,
+					archive: `${backupsDestination}main.tar.gz`,
 				},
 				files: [{ src: ["./*", "./.*"] }],
 				filter: "isFile",
@@ -103,7 +103,7 @@ module.exports = (grunt) => {
 	});
 
 	// all grunt register tasks
-	grunt.registerTask("backup", [
+	grunt.registerTask("backups", [
 		"compress:main",
 		"compress:github",
 		"compress:vscode",
@@ -116,7 +116,7 @@ module.exports = (grunt) => {
 	]);
 
 	// all tasks lists
-	const myTasksNames = ["backup"];
+	const myTasksNames = ["backups"];
 
 	// tasks status (description)
 	const myTasksStatus = [
