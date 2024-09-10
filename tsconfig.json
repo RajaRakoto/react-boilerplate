@@ -39,8 +39,15 @@
 			"~/*": ["./public/*"]
 		}
 	},
-  "files": ["./.eslintrc.cjs"],
-	"include": ["src", "e2e", "tests", "scripts", "./*.cjs", "./*.js", "./*.ts"],
-	"exclude": ["./node_modules"],
-	"references": [{ "path": "./tsconfig.node.json" }]
+	"files": ["./.eslintrc.cjs"],
+	"include": [
+		"src",
+		"e2e",
+		"tests",
+		"scripts",
+		"./*.cjs",
+		"./*.js",
+		"./*.ts",
+	],
+	"exclude": ["./node_modules"]
 }
