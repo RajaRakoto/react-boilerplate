@@ -15,7 +15,12 @@
 
 /* SHELL ---------------------------------------- */
 body {
-  background: #e7fbff;
-  background: -webkit-linear-gradient(0deg, #e7fbff 0%, #bdf4ff 50%, #afecff 100%);
-  background: linear-gradient(0deg, #e7fbff 0%, #bdf4ff 50%, #afecff 100%);
+	background: #e7fbff;
+	background: -webkit-linear-gradient(
+		0deg,
+		#e7fbff 0%,
+		#bdf4ff 50%,
+		#afecff 100%
+	);
+	background: linear-gradient(0deg, #e7fbff 0%, #bdf4ff 50%, #afecff 100%);
 }
