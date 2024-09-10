@@ -1,3 +1,7 @@
+<div align="center">
+<img src="https://github.com/RajaRakoto/github-docs/blob/master/boilerplate/react-boilerplate.jpg?raw=true">
+</div>
+
 # react-boilerplate 🚀
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com) [![forthebadge](https://github.com/RajaRakoto/github-docs/blob/master/badge/build-by.svg?raw=true)](https://forthebadge.com)
@@ -12,9 +16,11 @@ Instant Value - All basic tools included and configured:
 - 🌐 React.js >= 18
 - 🧅 Use Bun as package manager
 - 🌈 ESM
+- 🧹 ESlint with some initial rules recommendation
 - 🧪 Biome for code formatting and linting
 - ✅ Jest or Bun test for fast unit testing and code coverage
 - 📚 Type definitions for Bun.js and Jest
+- 🎨 Prettier to enforce consistent code style
 - ⚙️ EditorConfig for consistent coding style
 - 📦 NPM scripts for common operations
 - 📝 Simple example of Tsx code
@@ -42,11 +48,9 @@ cd <project-name>
 bun run pkg-upgrade # to upgrade outdated dependencies in interactive mode
 ```
 
-> NOTE 1: I employ the `MIT license` for this starter kit, which includes my name and GitHub profile. Please remember to adjust or remove it if deemed unnecessary.
-
-> NOTE 2: In order to help you better understand the structure of this boilerplate, there is a `README.md` file in each subdirectory of src.
-
-> NOTE 3: For certain configurations in the `package.json` file, you need to modify them to tailor them to your project (e.g: name, description, author, keywords, main, repository, ...).
+> 1. This starter kit uses the MIT license with my name and GitHub profile—update or remove if needed.
+> 2. Each subdirectory in `src` has a `README.md` to explain its structure.
+> 3. Adjust the `package.json` (name, description, author, etc.) to fit your project.
 
 ---
 
@@ -100,6 +104,8 @@ docker run  -p <port_number>:80 <container_name> # eg: docker run todo-app -p 80
 - 📜 `biome:stop` - Stops the Biome daemon server.
 - 📜 `biome:fix` - Runs a source code check and applies automatic fixes (linter & formatter) according to the defined rules.
 - 📜 `biome:unsafe` - Works like `biome:fix`, but may apply more invasive or risky changes.
+- 📜 `eslint` - Lints the project with ESLint and reports unhandled errors.
+- 📜 `prettier` - Formats code according to the `.prettierrc` rules.
 
 **Backup and Dependency Management**
 
