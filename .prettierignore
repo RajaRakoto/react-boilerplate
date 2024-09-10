@@ -1,0 +1,28 @@
+# production
+build
+dist
+tsconfig.tsbuildinfo
+tsdoc-metadata.json
+
+# dependencies
+.pnp
+.pnp.js
+.yarn
+node_modules
+bower_components
+jspm_packages
+
+# cache
+.rollup.cache
+.cache
+
+# editor
+.vscode
+
+# netlify
+.netlify
+
+# own
+package.json
+backups
+tmp
