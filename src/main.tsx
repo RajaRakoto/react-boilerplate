@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 
 /* libs */
 import { Provider } from "react-redux";
@@ -11,7 +11,7 @@ import Demo from "@/components/demo/Demo.tsx";
 import store from "@/stores/redux/store.ts";
 
 /* styles */
-import "@/styles/tailwind.scss";
+import "@/styles/tailwind.css";
 import "@/styles/index.scss";
 
 // =======================================
@@ -19,12 +19,12 @@ import "@/styles/index.scss";
 const rootElement = document.getElementById("root");
 
 if (rootElement) {
-	ReactDOM.createRoot(rootElement).render(
-		<React.StrictMode>
+	createRoot(rootElement).render(
+		<StrictMode>
 			<Provider store={store}>
 				<Demo />
 			</Provider>
-		</React.StrictMode>,
+		</StrictMode>,
 	);
 } else {
 	console.error("Element 'root' not found in the document.");
