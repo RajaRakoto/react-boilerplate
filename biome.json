@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -9,7 +9,14 @@
 		"lineWidth": 80,
 		"attributePosition": "auto"
 	},
-	"organizeImports": { "enabled": false },
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "off"
+			}
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -17,11 +24,10 @@
 			"complexity": {
 				"noBannedTypes": "error",
 				"noExtraBooleanCast": "error",
-				"noMultipleSpacesInRegularExpressionLiterals": "error",
+				"noAdjacentSpacesInRegex": "error",
 				"noUselessCatch": "error",
 				"noUselessThisAlias": "error",
-				"noUselessTypeConstraint": "error",
-				"noWith": "error"
+				"noUselessTypeConstraint": "error"
 			},
 			"correctness": {
 				"noConstAssign": "error",
@@ -31,7 +37,7 @@
 				"noGlobalObjectCalls": "error",
 				"noInnerDeclarations": "error",
 				"noInvalidConstructorSuper": "error",
-				"noNewSymbol": "error",
+				"noInvalidBuiltinInstantiation": "error",
 				"noNonoctalDecimalEscape": "error",
 				"noPrecisionLoss": "error",
 				"noSelfAssign": "error",
@@ -44,15 +50,16 @@
 				"noUnsafeOptionalChaining": "error",
 				"noUnusedLabels": "error",
 				"noUnusedVariables": "error",
-				"useArrayLiterals": "off",
 				"useExhaustiveDependencies": "warn",
 				"useHookAtTopLevel": "error",
 				"useIsNan": "error",
 				"useValidForDirection": "error",
+				"useValidTypeof": "error",
 				"useYield": "error"
 			},
 			"style": {
 				"noNamespace": "error",
+				"useArrayLiterals": "off",
 				"useAsConstAssertion": "error",
 				"useBlockStatements": "off"
 			},
@@ -85,8 +92,9 @@
 				"noSkippedTests": "warn",
 				"noUnsafeDeclarationMerging": "error",
 				"noUnsafeNegation": "error",
-				"useGetterReturn": "error",
-				"useValidTypeof": "error"
+				"noVar": "error",
+				"noWith": "error",
+				"useGetterReturn": "error"
 			}
 		}
 	},
@@ -106,22 +114,23 @@
 	},
 	"overrides": [
 		{
-			"include": ["*.{js,cjs,cts,mjs,ts,mts,jsx,tsx}"],
+			"includes": ["*.{js,cjs,cts,mjs,ts,mts,jsx,tsx}"],
 			"linter": {
 				"rules": {
 					"correctness": {
 						"noConstAssign": "off",
 						"noGlobalObjectCalls": "off",
 						"noInvalidConstructorSuper": "off",
-						"noNewSymbol": "off",
+						"noInvalidBuiltinInstantiation": "off",
 						"noSetterReturn": "off",
 						"noUndeclaredVariables": "off",
 						"noUnreachable": "off",
 						"noUnreachableSuper": "off"
 					},
+					"complexity": {
+						"noArguments": "error"
+					},
 					"style": {
-						"noArguments": "error",
-						"noVar": "error",
 						"useConst": "error"
 					},
 					"suspicious": {
@@ -132,6 +141,7 @@
 						"noImportAssign": "off",
 						"noRedeclare": "off",
 						"noUnsafeNegation": "off",
+						"noVar": "error",
 						"useGetterReturn": "off"
 					}
 				}
@@ -139,23 +149,24 @@
 		}
 	],
 	"files": {
-		"ignore": [
-			"build",
-			"dist",
-			"tsconfig.tsbuildinfo",
-			"tsdoc-metadata.json",
-			".pnp",
-			".pnp.js",
-			".yarn",
-			"node_modules",
-			"bower_components",
-			"jspm_packages",
-			"*.local",
-			".rollup.cache",
-			".cache",
-			".netlify",
-			"backups",
-			"tmp"
+		"includes": [
+			"**",
+			"!build",
+			"!dist",
+			"!tsconfig.tsbuildinfo",
+			"!tsdoc-metadata.json",
+			"!.pnp",
+			"!.pnp.js",
+			"!.yarn",
+			"!node_modules",
+			"!bower_components",
+			"!jspm_packages",
+			"!*.local",
+			"!.rollup.cache",
+			"!.cache",
+			"!.netlify",
+			"!backups",
+			"!tmp"
 		]
 	}
 }
