@@ -37,13 +37,12 @@
 		"paths": {
 			"@/*": ["./src/*"],
 			"~/*": ["./public/*"]
-		}
+		},
+		"typeRoots": ["./node_modules/@types", "./node_modules"]
 	},
-	"files": ["./.eslintrc.cjs"],
 	"include": [
 		"src",
 		"e2e",
-		"tests",
 		"scripts",
 		"./*.cjs",
 		"./*.mjs",

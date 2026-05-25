@@ -12,12 +12,12 @@
 
 Instant Value - All basic tools included and configured:
 
-- 🚀 Typescript >= 5.5.4
-- 🌐 React.js >= 18.3.1
+- 🚀 Typescript >= 6.0.x
+- 🌐 React.js >= 19.x
 - 🧅 Use Bun as package manager
 - 🌈 ESM
-- 🧹 ESlint with some initial rules recommendation
-- 🧪 Biome for code formatting and linting
+- 🧹 ESlint >= 10 with flat config and some initial rules recommendation
+- 🧪 Biome >= 2 for code formatting and linting
 - ✅ Jest or Bun test for fast unit testing and code coverage
 - 📚 Type definitions for Bun.js and Jest
 - 🎨 Prettier to enforce consistent code style
@@ -31,7 +31,7 @@ Instant Value - All basic tools included and configured:
 - 🧪 E2E test with Playwright
 - 🐳 Containerization for easy deployment and scaling with Docker
 - 🧺 Pre-configured setup for Redux or Zustand as state manager, easily removable if not needed
-- 🌀 Tailwind CSS already set up with PostCSS for flexible usage
+- 🌀 Tailwind CSS >= 4 with CSS-first config via `@tailwindcss/vite` plugin (no `tailwind.config.ts` needed)
 - 🩷 Sass extends CSS with features like variables, nested rules, mixins, imports, inheritance, built-in functions, and more ...
 
 > You can customize your website faster with [PLUM](https://github.com/RajaRakoto/plum), a mixins toolset powered by SASS. Quickly produce consistent, scalable CSS output, regardless of project size. For the best experience, it is recommended to use SASS version `1.77.6` to ensure smooth integration with PLUM.
