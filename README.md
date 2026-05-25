@@ -143,3 +143,4 @@ You can also check out my other starter projects:
 - 🚀 [qwik-boilerplate](https://github.com/RajaRakoto/qwik-boilerplate)
 - 🚀 [vscode-boilerplate](https://github.com/RajaRakoto/vscode-boilerplate)
 - 🚀 [cli-boilerplate](https://github.com/RajaRakoto/cli-boilerplate)
+- 🚀 [rust-boilerplate](https://github.com/RajaRakoto/rust-boilerplate)
